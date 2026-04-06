@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Professional portfolio website for a Software Engineering student showcasing skills, projects, education, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="software engineering, portfolio, web developer, student projects, responsive website"
+    />
+    <meta name="author" content="Ahmed Alsamadi" />
+    <title>Ahmed Alsamadi | Software Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <canvas id="starfield" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="top">
+      <nav class="container nav" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="Ahmed Alsamadi, go to top">
+          <img
+            class="brand-img"
+            src="assets/profile.png"
+            alt=""
+            width="42"
+            height="42"
+            decoding="async"
+          />
+        </a>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Toggle navigation menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section">
+        <div class="container hero-content reveal">
+          <p class="eyebrow">Junior Full-Stack MERN Developer</p>
+          <h1>Building clean, reliable, and engaging digital experiences.</h1>
+          <p class="hero-text">
+            Hi, I am <strong>Ahmed Alsamadi</strong>, a Software Engineering
+            undergraduate focused on building secure, scalable, and responsive
+            applications using the MERN stack and modern UI practices.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container reveal">
+          <h2>About Me</h2>
+          <div class="about-grid">
+            <figure class="profile-card">
+              <img
+                class="profile-image"
+                src="assets/profile.png"
+                alt="Portrait of Ahmed Alsamadi"
+                loading="lazy"
+                width="260"
+                height="340"
+              />
+            </figure>
+            <div>
+              <p>
+                I am a highly motivated Software Engineering student at Altinbas
+                University in Istanbul, with strong hands-on experience in
+                full-stack web development using MongoDB, Express.js, React, and
+                Node.js.
+              </p>
+              <p>
+                I enjoy turning complex ideas into practical products through
+                clean code, thoughtful architecture, and continuous learning.
+                I am currently seeking internship opportunities to apply and
+                expand my technical skills.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container reveal">
+          <h2>Skills</h2>
+          <p class="section-intro">
+            Core technologies and tools I use to build modern applications.
+          </p>
+          <div class="skills-tags" aria-label="Technical skills">
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>React</span>
+            <span>Redux Toolkit</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>React Native (Expo)</span>
+            <span>MongoDB</span>
+            <span>Mongoose</span>
+            <span>Java</span>
+            <span>C</span>
+            <span>C++</span>
+            <span>Firebase</span>
+            <span>Git</span>
+            <span>GitHub</span>
+            <span>REST APIs</span>
+            <span>JWT & Bcrypt</span>
+          </div>
+          <div class="skill-bars">
+            <article class="skill-item">
+              <div class="skill-label">
+                <span>Frontend Development (React, Tailwind)</span>
+                <span>92%</span>
+              </div>
+              <div class="bar"><div style="--level: 92%"></div></div>
+            </article>
+            <article class="skill-item">
+              <div class="skill-label">
+                <span>Backend Development (Node, Express)</span>
+                <span>88%</span>
+              </div>
+              <div class="bar"><div style="--level: 88%"></div></div>
+            </article>
+            <article class="skill-item">
+              <div class="skill-label">
+                <span>Database Design (MongoDB, Mongoose)</span>
+                <span>85%</span>
+              </div>
+              <div class="bar"><div style="--level: 85%"></div></div>
+            </article>
+            <article class="skill-item">
+              <div class="skill-label">
+                <span>System Design & SDLC</span>
+                <span>84%</span>
+              </div>
+              <div class="bar"><div style="--level: 84%"></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container reveal">
+          <h2>Projects</h2>
+          <p class="section-intro">
+            Selected work showcasing problem-solving, architecture, and clean
+            implementation.
+          </p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>ALTINITY - Social Networking Platform for Developers</h3>
+              <p>
+                Built a full-stack developer social platform with secure
+                authentication, 15+ REST APIs, image uploads, likes, comments,
+                and developer connections.
+              </p>
+              <p class="tech-stack">Tech: MongoDB, Express.js, React, Node.js, Tailwind CSS, JWT, Bcrypt</p>
+              <div class="project-links">
+                <a href="https://github.com/ahmedalsamadi/altinity-client" aria-label="ALTINITY code link" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="https://ahmedalsamadi.github.io/altinity-client/" aria-label="ALTINITY live demo link" target="_blank" rel="noopener noreferrer">Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Sopher - Social Media Platform</h3>
+              <p>
+                Developed a comprehensive MERN social platform with secure
+                authentication, post creation, user profiles,
+                following/unfollowing, and notifications.
+              </p>
+              <p class="tech-stack">Tech: MongoDB, Express.js, React, Node.js, Redux Toolkit, Tailwind CSS, JWT</p>
+              <div class="project-links">
+                <a href="https://github.com/ahmedalsamadi" aria-label="Sopher code link" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="#" aria-label="Sopher live demo link">Demo</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Lifo - Productivity & Habit Tracking Mobile App</h3>
+              <p>
+                Engineered a cross-platform mobile app focused on task and habit
+                tracking, with authentication, persistent storage, and
+                notification integrations.
+              </p>
+              <p class="tech-stack">Tech: React Native (Expo), TypeScript, Node.js, Express.js, MongoDB, Firebase</p>
+              <div class="project-links">
+                <a href="https://github.com/ahmedalsamadi" aria-label="Lifo code link" target="_blank" rel="noopener noreferrer">Code</a>
+                <a href="#" aria-label="Lifo live demo link">Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <div class="container reveal">
+          <h2>Education</h2>
+          <ol class="timeline">
+            <li>
+              <h3>Bachelor of Science in Software Engineering</h3>
+              <p>Altinbas University, Istanbul, Turkey - Expected Graduation: July 2026</p>
+              <p>
+                Focused on full-stack systems, clean architecture, and practical
+                software engineering practices through academic and project work.
+              </p>
+            </li>
+            <li>
+              <h3>Relevant Coursework</h3>
+              <p>Data Structures & Algorithms, Database Management Systems, Web Technologies, Software Engineering Principles</p>
+              <p>
+                Strong foundation in problem solving, software design, and
+                modern development workflows.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container reveal">
+          <h2>Contact</h2>
+          <p class="section-intro">
+            Open to internships, collaborations, and software engineering
+            opportunities.
+          </p>
+          <div class="contact-grid">
+            <form class="contact-form" action="#" method="post">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+            <div class="social-links">
+              <p><strong>Email:</strong> <a href="mailto:alsamadeyahmad@gmail.com">alsamadeyahmad@gmail.com</a></p>
+              <p><strong>Phone:</strong> <a href="tel:+905310243850">+90 531 024 3850</a></p>
+              <p><strong>Location:</strong> Istanbul, Turkey</p>
+              <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/in/ahmed-alsamadi" aria-label="LinkedIn profile link" target="_blank" rel="noopener noreferrer">linkedin.com/in/ahmed-alsamadi</a>
+              </p>
+              <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/ahmedalsamadi" aria-label="GitHub profile link" target="_blank" rel="noopener noreferrer">github.com/ahmedalsamadi</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Ahmed Alsamadi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
