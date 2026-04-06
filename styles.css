@@ -379,6 +379,25 @@ textarea {
   padding: 0.7rem 0.75rem;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status {
+  margin: 0 0 0.5rem;
+  padding: 0.65rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(87, 247, 180, 0.35);
+  background: rgba(87, 247, 180, 0.08);
+  color: var(--text);
+  font-weight: 600;
+}
+
 input:focus,
 textarea:focus,
 button:focus,

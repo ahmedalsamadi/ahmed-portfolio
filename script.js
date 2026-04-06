@@ -118,6 +118,17 @@ function setCurrentYear() {
   }
 }
 
+function setupContactStatus() {
+  const status = document.getElementById("form-status");
+  if (!status) return;
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("sent") === "1") {
+    status.hidden = false;
+    status.textContent = "Thanks! Your message was sent successfully.";
+  }
+}
+
 function init() {
   resizeCanvas();
   initStars();
@@ -126,6 +137,7 @@ function init() {
   setupMobileNav();
   setupBackgroundInteraction();
   setCurrentYear();
+  setupContactStatus();
 }
 
 window.addEventListener("resize", () => {

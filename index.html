@@ -249,7 +249,22 @@
             opportunities.
           </p>
           <div class="contact-grid">
-            <form class="contact-form" action="#" method="post">
+            <form
+              class="contact-form"
+              id="contact-form"
+              action="https://formspree.io/f/mzdkyqld"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New portfolio message" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://ahmedalsamadi.github.io/ahmed-portfolio/?sent=1#contact"
+              />
+              <input class="hp-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off" />
+
+              <p id="form-status" class="form-status" aria-live="polite" hidden></p>
+
               <label for="name">Name</label>
               <input id="name" name="name" type="text" autocomplete="name" required />
 
